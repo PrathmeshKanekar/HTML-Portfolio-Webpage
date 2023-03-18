@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Practice</title>
+    <style>
+      * {
+        margin: 0;
+        box-sizing: border-box;
+      }
+      header {
+        background-color: gray;
+        color: white;
+        text-align: center;
+        padding: 20px;
+        border: 3px solid black;
+        margin: 10px;
+      }
+      nav {
+        /* background-color: aquamarine; */
+        padding: 10px;
+        display: flex;
+        border: 5px solid;
+        margin: 10px;
+      }
+
+      ul {
+        list-style: none;
+      }
+      li {
+        display: inline;
+        padding: 10px;
+      }
+      li a {
+        color: black;
+        padding: 20px;
+        text-decoration: none;
+      }
+      section {
+        display: flex;
+        background-color: rgb(228, 230, 230);
+        border: 3px solid;
+        margin: 10px;
+      }
+      article {
+        display: flex;
+      }
+      .welcome {
+        /* background-image: url(assets/image/background4.jpg);
+            padding: 50px;
+            background-repeat: no-repeat; */
+        margin-left: 10px;
+        padding-left: 10px;
+        padding-top: 50px;
+        flex: 1;
+      }
+      .profile{
+        flex: 1;
+      }
+
+      .welcome h2 {
+        color: rgb(35, 16, 93);
+        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+      }
+      .welcome p {
+        margin-top: 30px;
+      }
+      .profile img {
+        width: 600px;
+        height: 400px;
+        padding-right: 200px;
+        padding-bottom: 0px;
+        
+      }
+      .qua {
+        color: rgb(10, 61, 137);
+        padding: 30px;
+        flex: 1;
+        border: 3px solid black;
+        margin: 10px;
+      }
+      /* .Add {
+        color: rgb(10, 61, 137);
+        padding: 30px;
+        flex: 1;
+        border: 3px solid black;
+        margin: 10px;
+      } */
+      .imgalogo img {
+        width: 130px;
+      }
+      .navigation {
+        padding: 30px;
+        display: flex;
+        margin: auto;
+        /* padding-left: 300px; */
+      }
+
+      /* span{
+            
+        } */
+      aside {
+        display: flex;
+      }
+
+      .aside1 {
+        flex: 2;
+        margin: 10px;
+        border: 3px solid;
+        
+      }
+
+      footer {
+        display: flex;
+        height: 100px;
+        color: white;
+        align-items: center;
+        background-color: rgb(33, 33, 33);
+        border: 3px solid rgb(176, 34, 34);
+        margin: 10px;
+      }
+      footer li img {
+        width: 40px;
+      }
+      /* @media (max-width: 600px) {
+        section,
+        article,aside
+        footer {
+          flex-direction: column;
+        }
+        li {
+          display: block;
+        }
+      } */
+      @media (max-width: 600px) {
+        section,article,nav,aside,footer {
+          flex-direction: column;
+        }
+        .profile img{
+          width: 100%;
+        }
+        footer{
+          height: 500px;
+        }
+        li a{
+          display: block;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Protfolio</h1>
+    </header>
+    <nav>
+      <div class="imgalogo">
+        <img src="assets/image/protfolio logo1.png" alt="logo" />
+      </div>
+      <div class="navigation">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#Profile">Profile</a></li>
+          <li><a href="#Qualification">Qualification</a></li>
+          <li><a href="#Contact Us">Contact Us</a></li>
+        </ul>
+      </div>
+    </nav>
+    <section id="Profile">
+      <div class="welcome">
+        <h2>Hii There,</h2>
+        <h2>I'M PRATHMESH KANEKAR</h2>
+        <h2>MEARN FULL STACK DEVELOPER</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni minima
+          sit quam expedita sunt odio, omnis ipsum nostrum tempora voluptas,
+          dicta aspernatur. Exercitationem tenetur commodi voluptates
+          repudiandae laboriosam labore? Voluptate.
+        </p>
+      </div>
+      <div class="profile">
+        <img src="assets/image/profile icon.png" alt="" />
+      </div>
+    </section>
+    <article id="Qualification">
+      <div class="qua">
+        <h2>Qualification:</h2>
+        <p>Diploma In Computer Engg</p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius
+          voluptatum quae voluptates explicabo hic repellendus officia vel.
+          Eligendi quod dolor iusto consequuntur eveniet quas corporis dolorum
+          cumque iste et, quam magni? Facilis assumenda minima ratione error
+          harum laudantium, incidunt aperiam facere aliquam velit veniam
+          necessitatibus perferendis consectetur praesentium eius. Soluta?
+        </p>
+      </div>
+      <div class="qua">
+       <h2></h2>
+      </div>
+    </article>
+
+    <aside>
+      <div class="aside1">
+        <h2>Address:</h2>
+        <p>Sane Guruji Vasahat, Kolhapur</p>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugiat porro
+          voluptatibus unde. Vel dolorum neque ipsum aperiam corporis veniam et
+          dicta, mollitia quod blanditiis rem impedit magni minima, molestiae
+          placeat id incidunt, amet odit natus sed est iure ullam. Aspernatur
+          dolores nisi reprehenderit illo repellendus sapiente consequatur
+          optio, nesciunt possimus.
+        </p>
+      </div>
+
+      <div class="aside1">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7643.937517000731!2d74.20032827268126!3d16.67844673153641!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc1aab3b4ae632b%3A0x6af29edd37a7c2ad!2sSaneguruji%20Vasahat%2C%20Kanerkar%20Nagar%2C%20Kolhapur%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1674283817193!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </aside>
+
+    <footer id="Contact Us">
+      <h2>Contact Us:</h2>
+      <ul>
+        <li>
+          <a href="mailto:abc@gmail.com">
+            <img src="assets/image/gmail logo.png" alt=""
+          /></a>
+        </li>
+        <li>
+          <a href="telto:+919561645245"
+            ><img src="assets/image/whatsapp logo.png" alt=""
+          /></a>
+        </li>
+        <li>
+          <a href="https://www.facebook.com/"
+            ><img src="assets/image/facebook-logo.png" alt=""
+          /></a>
+        </li>
+        <li>
+          <a href="https://www.instagram.com/"
+            ><img src="assets/image/instagram logo.png" alt=""
+          /></a>
+        </li>
+      </ul>
+    </footer>
+  </body>
+</html>
